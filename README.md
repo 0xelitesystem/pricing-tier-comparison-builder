@@ -14,13 +14,35 @@ This is for laying out and comparing tiers, not for collecting payment. Nothing 
 
 Retail hang-tags: manila swing tags with a string hole, stamped prices, and a red featured marker on the highlighted tier.
 
+## Why this exists
+
+Comparing pricing tiers usually means a spreadsheet or a page builder. This is a single HTML file that lays out two to four tiers and hands you a markdown table, with no tracking, no account, and no dependencies. MIT licensed.
+
 ## Privacy
 
 Everything runs in your browser. Nothing you type is sent anywhere, stored, or saved. Closing the tab clears it.
 
-## Use it
+## Use
+
+1. Fill in each tier's name, price and billing period.
+2. List the tier's features in the textarea, one per line, and tick "mark as featured" on the tier you want raised.
+3. Use "+ Add tier" for up to four tiers, or the remove button to drop one (two is the minimum).
+4. Click "Copy markdown table" and paste the comparison table into your doc or README.
 
 Open `index.html` in any modern browser, or host it as a static page. No build step, no dependencies, no network calls.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/pricing-tier-comparison-builder
+cd pricing-tier-comparison-builder
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. It is a single `index.html` file.
 
 ## More
 
